@@ -46,4 +46,22 @@ def create_app(config_name='default'):
     def health_check():
         return {'status': 'OK', 'message': 'PetClinic API is running'}, 200
     
+    # API documentation endpoint
+    @app.route('/api')
+    def api_docs():
+        return {
+            'message': 'PetClinic API',
+            'version': '1.0.0',
+            'documentation': '/apidocs',
+            'endpoints': {
+                'owners': '/api/owners',
+                'pets': '/api/pets',
+                'visits': '/api/visits',
+                'vets': '/api/vets',
+                'specialties': '/api/specialties',
+                'pet-types': '/api/pet-types',
+                'auth': '/api/auth'
+            }
+        }, 200
+    
     return app
