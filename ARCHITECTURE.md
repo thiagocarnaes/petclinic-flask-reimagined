@@ -47,9 +47,9 @@ graph TB
     SERVICES --> MODELS
     MODELS --> DB
     
-    style UI fill:#e1f5fe
-    style DB fill:#f3e5f5
-    style SERVICES fill:#e8f5e8
+    style UI fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style DB fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style SERVICES fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
 </lov-mermaid>
 
 ### 2.2 Arquitetura Backend (Flask)
@@ -84,8 +84,8 @@ graph TD
     MODELS --> MYSQL
     MIGRATIONS --> MYSQL
     
-    style BASE_SERVICE fill:#fff3e0
-    style BASE_MODEL fill:#fff3e0
+    style BASE_SERVICE fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style BASE_MODEL fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
 </lov-mermaid>
 
 ### 2.3 Arquitetura Frontend (React)
@@ -117,8 +117,8 @@ graph TD
     REACT_QUERY --> CACHE
     COMPONENTS --> LOCAL_STATE
     
-    style UI_COMPONENTS fill:#e3f2fd
-    style REACT_QUERY fill:#f1f8e9
+    style UI_COMPONENTS fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style REACT_QUERY fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
 </lov-mermaid>
 
 ## 3. Estrutura de Dados
